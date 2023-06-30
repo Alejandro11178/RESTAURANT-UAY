@@ -43,3 +43,11 @@
   .card .highlight {
     background-color: yellow;
   }
+
+  h1{
+    padding-top: 2%;
+    text-align: center;
+  }
+  body{
+    background-color: #D6E8DB;
+  }
