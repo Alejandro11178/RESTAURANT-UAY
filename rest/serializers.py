@@ -5,3 +5,7 @@ class PlatoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Plato  # Modelo a ser serializado
         fields = '__all__'  
+class PlatoDestacadoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Plato  # Modelo a ser serializado
+        fields = '__all__'  

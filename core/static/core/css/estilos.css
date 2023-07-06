@@ -45,22 +45,26 @@
 }
 
 h1{
-  padding-top: 0%;
+  
   text-align: center;
   background-color: #74B49B;
   color: white;
+  padding-top: 0;
+  margin: 0;
+  background-color: #75B79E;
 }
+
 body{
-  background-color: #f0e7cd;
+  background-color: #EEF9BF;
 }
 
 /* NAVBAR */
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-top: 0%;
   overflow: hidden;
-  background-color: #74B49B;
+  background-color: #75B79E;
 }
 
 li {
@@ -76,5 +80,5 @@ li a {
 }
 
 li a:hover {
-  background-color: #A7D7C5;
+  background-color: #A7E9AF;
 }

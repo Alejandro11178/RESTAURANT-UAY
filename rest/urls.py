@@ -8,7 +8,7 @@ from . import views
 
 router = routers.DefaultRouter()  # Creación de una URL predeterminada de Django REST Framework
 router.register('plato', views.PlatoViewSet)  # Registro de la vista del ViewSet en el enrutador con la ruta 'plato'
-
+router.register('destacado', views.PlatoDestacadoViewSet)
 # El router genera las urls para poder listar, verificar, eliminar y guardar los enlaces.
 
 
