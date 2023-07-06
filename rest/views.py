@@ -13,6 +13,6 @@ class PlatoViewSet(viewsets.ModelViewSet):
     serializer_class = PlatoSerializer  # Clase de serializador para convertir objetos Plato en formato JSON
 
   
-#class PlatoDestacadoViewSet(viewsets.ModelViewSet):
-#    queryset = Plato.objects.filter(destacado=True)
-#    serializer_class = PlatoSerializer
+class PlatoDestacadoViewSet(viewsets.ModelViewSet):
+   queryset = Plato.objects.filter(destacado=True)
+   serializer_class = PlatoSerializer

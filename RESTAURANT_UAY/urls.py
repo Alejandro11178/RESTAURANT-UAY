@@ -22,5 +22,6 @@ urlpatterns = [
     path('api/', include('rest.urls')),  
     
     path('', views.menu, name="menu"),
+    path('destacados/', views.destacados, name="destacados")
     
 ]

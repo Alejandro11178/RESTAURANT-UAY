@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block contenido%}
+
+<div class="card-container">
+    {% for plato in platos_destacados %}
+      <div class="card highlight">
+        <img src="{{ plato.imagen_url }}" alt="{{ plato.nombre }}">
+        <h3>{{ plato.nombre }}</h3>
+        <p>{{ plato.descripcion }}</p>
+        <p class="price">{{ plato.precio }} CLP</p>
+      </div>
+    {% empty %}
+      <p>No hay platos destacados.</p>
+    {% endfor %}
+  </div>
+
+  {%endblock%}
