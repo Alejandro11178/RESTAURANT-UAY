@@ -1,6 +1,7 @@
 from django.shortcuts import render  
 from rest_framework import viewsets  
 from .serializers import PlatoSerializer 
+from .serializers import PlatoDestacadoSerializer 
 from core.models import Plato  
 
 
@@ -15,4 +16,4 @@ class PlatoViewSet(viewsets.ModelViewSet):
   
 class PlatoDestacadoViewSet(viewsets.ModelViewSet):
    queryset = Plato.objects.filter(destacado=True)
-   serializer_class = PlatoSerializer
+   serializer_class = PlatoDestacadoSerializer
