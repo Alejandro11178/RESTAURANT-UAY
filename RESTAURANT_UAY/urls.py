@@ -19,7 +19,7 @@ from django.urls import path, include
 from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('rest.urls')),  
+    path('api/', include('rest.urls')),  # Las URL que comiencen con 'api/' serán manejadas por el módulo 'rest.urls'.
     
     path('', views.menu, name="menu"),
     path('destacados/', views.destacados, name="destacados")
